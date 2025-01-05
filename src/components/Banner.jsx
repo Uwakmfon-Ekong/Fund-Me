@@ -32,7 +32,7 @@ export default function HeroSection() {
  };
 
   return (
-    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center bg-gradient-to-b from-black via-purple-900/30 to-black">
+    <div className="relative min-h-screen overflow-hidden flex flex-col items-center justify-center bg-gradient-to-b from-black via-blue-900/30 to-black">
       {showConfetti && (
         <Confetti
           width={window.innerWidth}
@@ -43,11 +43,11 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 py-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Send <span className="text-purple-400">Funds</span>
+            Send <span className="text-blue-400">Funds</span>
           </h1>
           <div className="flex gap-2 justify-center items-center">
             <button
-              className={`bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-lg transition-colors ${
+              className={`bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 rounded-lg transition-colors ${
                 noButtonPosition ? "absolute" : "relative"
               }`}
               style={noButtonPosition || {}}
@@ -57,7 +57,7 @@ export default function HeroSection() {
               No
             </button>
             <button
-              className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-2 rounded-lg transition-colors"
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-2 rounded-lg transition-colors"
               onClick={handleYesClick}
             >
               Yes
@@ -75,8 +75,8 @@ export default function HeroSection() {
             >
               <X className="w-6 h-6" />
             </button>
-            <h2 className="text-2xl font-bold mb-6 text-purple-600 flex items-center gap-2">
-              <CreditCard className="w-6 h-6 text-purple-500" />
+            <h2 className="text-2xl font-bold mb-6 text-blue-600 flex items-center gap-2">
+              <CreditCard className="w-6 h-6 text-blue-500" />
               Account Details
             </h2>
             <div className="space-y-4">
@@ -86,10 +86,10 @@ export default function HeroSection() {
                   <p className="text-gray-700">Account Number:</p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="font-medium">9163169949</span>
+                  <span className="font-medium">8128445215</span>
                   <button
-                    className="text-purple-600 hover:text-purple-700"
-                    onClick={() => copyToClipboard("9163169949")}
+                    className="text-blue-600 hover:text-blue-700"
+                    onClick={() => copyToClipboard("8128445215")}
                   >
                     <Copy className="w-5 h-5" />
                   </button>
@@ -103,7 +103,7 @@ export default function HeroSection() {
                 <div className="flex items-center gap-2">
                   <span className="font-medium">Opay</span>
                   <button
-                    className="text-purple-600 hover:text-purple-700"
+                    className="text-blue-600 hover:text-blue-700"
                     onClick={() => copyToClipboard("Opay")}
                   >
                     <Copy className="w-5 h-5" />
@@ -114,17 +114,17 @@ export default function HeroSection() {
                 <div className="flex items-center justify-between gap-2">
                   <User className="w-5 h-5 text-gray-500" />
                   
-                  <span className="font-medium">Robinson Honour</span>
+                  <span className="font-medium">Whakee</span>
                   <button
-                    className="text-purple-600 hover:text-purple-700"
-                    onClick={() => copyToClipboard("Robinson Honour")}
+                    className="text-blue-600 hover:text-blue-700"
+                    onClick={() => copyToClipboard("Uwakmfon Ekong")}
                   >
                   </button>
                 </div>
               </div>
             </div>
             <button
-              className="mt-6 bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-lg transition-colors w-full"
+              className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition-colors w-full"
               onClick={handleCheckClick}
             >
               Sent
